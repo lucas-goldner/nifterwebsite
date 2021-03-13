@@ -3,7 +3,7 @@ import React, { Fragment, useState } from "react";
 import pages from "../data/pages.json";
 import ReactPageScroller from "react-page-scroller";
 import LayoutDefault from "../../layouts/LayoutDefault";
-import Header from "../../components/header/HeaderFullPage";
+import Header from "../components/HeaderFullPage";
 import PopupMenu from "../../components/header/elements/popup";
 import PopupSearch from "../../components/popup/PopupSearch";
 import PopupMobileMenu from "../../components/popup/PopupMobileMenu";
