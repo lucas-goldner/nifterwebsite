@@ -4,9 +4,8 @@ import pages from "../data/pages.json";
 import ReactPageScroller from "react-page-scroller";
 import LayoutDefault from "../../layouts/LayoutDefault";
 import Header from "../components/HeaderFullPage";
-import PopupMenu from "../../components/header/elements/popup";
-import PopupSearch from "../../components/popup/PopupSearch";
-import PopupMobileMenu from "../../components/popup/PopupMobileMenu";
+import PopupMenu from "../components/PopupMenu";
+import PopupMobileMenu from "../components/PopupMobileMenu";
 import PortfolioItem from "../../components/portfolio/PortfolioItemFullPage";
 
 const HomeVerticalSlidePortfolio = () => {
@@ -49,7 +48,6 @@ const HomeVerticalSlidePortfolio = () => {
       >
         <Header />
         <PopupMenu />
-        <PopupSearch />
         <PopupMobileMenu />
         <ReactPageScroller
           pageOnChange={handlePageChange}
