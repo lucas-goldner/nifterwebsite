@@ -1,12 +1,11 @@
 import Head from "next/head";
 import React, { Fragment, useState } from "react";
-import pages from "../data/pages.json";
+import portfolios from "../data/pages.json";
 import ReactPageScroller from "react-page-scroller";
-import LayoutDefault from "../../layouts/LayoutDefault";
-import Header from "../components/HeaderFullPage";
+import LayoutDefault from "../container/LayoutDefault";
+import Header from "../components/Header";
 import PopupMenu from "../components/PopupMenu";
-import PopupMobileMenu from "../components/PopupMobileMenu";
-import PortfolioItem from "../../components/portfolio/PortfolioItemFullPage";
+import PortfolioItem from "../components/babyComponents/PortfolioItem";
 
 const HomeVerticalSlidePortfolio = () => {
   const [currentPage, setCurrentPage] = useState(null);
@@ -33,7 +32,7 @@ const HomeVerticalSlidePortfolio = () => {
   };
 
   const pagesNumbers = getPagesNumbers();
-  const characters = ["E", "C", "V"];
+  const characters = ["N", "F", "T"];
 
   return (
     <Fragment>
@@ -48,7 +47,6 @@ const HomeVerticalSlidePortfolio = () => {
       >
         <Header />
         <PopupMenu />
-        <PopupMobileMenu />
         <ReactPageScroller
           pageOnChange={handlePageChange}
           customPageNumber={currentPage}
@@ -58,7 +56,7 @@ const HomeVerticalSlidePortfolio = () => {
               key={portfolio.id}
               number={portfolio.id}
               title={portfolio.title}
-              thumb={require("./" + portfolio.thumb)}
+              thumb={"." + portfolio.thumb}
               category={portfolio.category}
               character={characters[portfolio.id - 1]}
               className="section"

@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "./elements/logo";
-import HeaderConfig from "../config/HeaderConfigTwo";
+import Logo from "../components/logo";
+import HeaderConfig from "../config/HeaderConfig";
 import HeaderContainer from "../container/HeaderContainer";
 
 const HeaderFullPage = () => {
@@ -12,7 +12,7 @@ const HeaderFullPage = () => {
       classes="header-bar header-fixed-150"
     >
       <div className="header-left">
-        <Logo logo={"./brook-black.png"} />
+        <Logo logo={"./img/brook-black.png"} />
       </div>
 
       <div className="header-right">

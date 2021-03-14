@@ -1,5 +1,4 @@
 import React from "react";
-import NavbarItem from "../navbar/NavbarItem";
 import Input from "../components/Input";
 import { toCapitalize } from "../utils/ToCapitalize";
 import socialIcons from "../data/socials.json";
@@ -19,9 +18,7 @@ const PopupMenu = () => {
       <div className="header-default light-logo--version poss_relative">
         <div className="mainmenu-wrapper">
           <div className="page_nav">
-            <ul className="mainmenu">
-              <NavbarItem />
-            </ul>
+            <ul className="mainmenu"></ul>
           </div>
         </div>
       </div>
@@ -57,7 +54,7 @@ const PopupMenu = () => {
                 {socialIcons.map((icon) => (
                   <li key={icon.id} className={icon.media}>
                     <a
-                      href={`https://${icon.media}.com/${icon.username}`}
+                      href={`https://`}
                       className="link hint--bounce hint--top hint--white"
                       aria-label={toCapitalize(icon.media)}
                     >

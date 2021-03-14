@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { isSticky } from "../utils/isSticky";
+import { isSticky } from "../utils/Sticky";
 
 const HeaderContainer = ({
   children,
