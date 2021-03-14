@@ -9,13 +9,7 @@ function HeaderConfig() {
   }, []);
 
   return (
-    <div className="header-right have-not-flex pl--35 pl_md--5 pl_sm--5">
-      <div className="menu-hamburger popup-mobile-click light-version d-block d-lg-none">
-        <div>
-          <i />
-        </div>
-      </div>
-    </div>
+    <div className="header-right have-not-flex pl--35 pl_md--5 pl_sm--5"></div>
   );
 }
 

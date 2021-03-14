@@ -28,7 +28,7 @@ const PortfolioItem = ({
             </div>
           </div>
           <div
-            className="fullscreen-inner feature-thumbnail"
+            className="fullscreen-inner feature-thumbnail featureThumb"
             style={{ backgroundImage: `url(${thumb})` }}
           />
         </div>
