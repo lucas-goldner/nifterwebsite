@@ -1,38 +1,20 @@
 [
   {
     "id": 1,
-    "title": "A Golden Age of Design",
-    "thumb": "/img/portfolio-1.jpg",
-    "category": "Design"
+    "title": "The First Real NFT App",
+    "thumb": "/img/portfolio-1.png",
+    "category": "Nifter"
   },
   {
     "id": 2,
-    "title": "New Age Design",
-    "thumb": "/img/portfolio-2.jpg",
-    "category": "HTML"
+    "title": "Enjoy your collection",
+    "thumb": "/img/portfolio-3.png",
+    "category": "Gallery"
   },
   {
     "id": 3,
-    "title": "Website Success Prospects",
-    "thumb": "/img/portfolio-3.jpg",
-    "category": "Development"
-  },
-  {
-    "id": 4,
-    "title": "Web Comic Landscape",
-    "thumb": "/img/portfolio-1.jpg",
-    "category": "Photoshop"
-  },
-  {
-    "id": 5,
-    "title": "A Golden Age of Design",
-    "thumb": "/img/portfolio-2.jpg",
-    "category": "Design"
-  },
-  {
-    "id": 6,
-    "title": "Website Success Prospects",
-    "thumb": "/img/portfolio-3.jpg",
-    "category": "Development"
+    "title": "Check Out Other Collections",
+    "thumb": "/img/portfolio-2.png",
+    "category": "Friends"
   }
 ]

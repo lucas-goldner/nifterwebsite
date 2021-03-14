@@ -12,7 +12,7 @@ const HeaderFullPage = () => {
       classes="header-bar header-fixed-150"
     >
       <div className="header-left">
-        <Logo logo={"./img/brook-black.png"} />
+        <Logo logo={"./img/nifterLogo.jpg"} />
       </div>
 
       <div className="header-right">

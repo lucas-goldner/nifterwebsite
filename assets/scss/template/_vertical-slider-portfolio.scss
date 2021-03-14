@@ -13,11 +13,10 @@ Vertical Slider Portfolio
 .fullpage {
   position: relative;
   z-index: 2;
-  -webkit-transition: -webkit-transform .6s ease;
-  transition: -webkit-transform .6s ease;
-  transition: transform .6s ease;
-  transition: transform .6s ease, -webkit-transform .6s ease;
-
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
 
 .fullpage .section {
@@ -26,7 +25,6 @@ Vertical Slider Portfolio
   background-position: 50%;
   background-size: cover;
 }
-
 
 .vertical-fullscreen-header.headroom--sticky.headroom--not-top {
   box-shadow: none;
@@ -38,22 +36,36 @@ Vertical Slider Portfolio
   background-color: transparent;
 }
 
-.vertical-fullscreen-header.header-default .header__wrapper .header-left .logo a img.black {
+.vertical-fullscreen-header.header-default
+  .header__wrapper
+  .header-left
+  .logo
+  a
+  img.black {
   display: none;
 }
 
-.vertical-fullscreen-header.headroom--sticky.headroom--not-top .header__wrapper .header-left .logo a img.black {
+.vertical-fullscreen-header.headroom--sticky.headroom--not-top
+  .header__wrapper
+  .header-left
+  .logo
+  a
+  img.black {
   display: block;
 }
 
-.vertical-fullscreen-header.headroom--sticky.headroom--not-top .header__wrapper .header-left .logo a img.light {
+.vertical-fullscreen-header.headroom--sticky.headroom--not-top
+  .header__wrapper
+  .header-left
+  .logo
+  a
+  img.light {
   display: none;
 }
 
 .vertical-fullscreen-header.header-default.header-transparent.position-from--top.headroom--not-top {
   padding-top: 24px;
 }
-
 
 /*================================
  Fullscreen Slider Wrapper 
@@ -103,17 +115,16 @@ Vertical Slider Portfolio
         font-family: $heading-font;
 
         &.style-1 {
-          color: #b40720;
+          color: black;
         }
 
         &.style-2 {
-          color: #c17d4b
+          color: black;
         }
 
         &.style-3 {
-          color: #188a63;
+          color: black;
         }
-
       }
 
       .inner {
@@ -127,15 +138,15 @@ Vertical Slider Portfolio
         h2 {
           &.heading {
             position: relative;
-            -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
             a {
               color: inherit;
             }
 
             &:hover {
-              color: #FB6031;
+              color: #fb6031;
             }
 
             span {
@@ -156,8 +167,8 @@ Vertical Slider Portfolio
             font-weight: 700;
             color: #222;
             font-family: $heading-font;
-            -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
             .btn-icon {
               position: relative;
@@ -166,11 +177,11 @@ Vertical Slider Portfolio
               top: -5px;
               height: 2px;
               display: inline-block;
-              color: rgba(0, 0, 0, .1);
+              color: rgba(0, 0, 0, 0.1);
               background: currentColor;
               margin-left: 15px;
-              -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-              transition: all .3s cubic-bezier(.645, .045, .355, 1);
+              -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+              transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
               &::before {
                 content: "";
@@ -199,19 +210,15 @@ Vertical Slider Portfolio
                 transform: translateX(5px);
 
                 &::before {
-
                 }
               }
             }
           }
         }
       }
-
-
     }
   }
 }
-
 
 .vertical-slide-gradient-portfolio {
   .cd-section {
@@ -221,16 +228,3 @@ Vertical Slider Portfolio
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
