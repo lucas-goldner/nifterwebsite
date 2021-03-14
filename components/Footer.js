@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { Row, Col } from "react-bootstrap";
-import Widget from "./babyComponents/Widget";
-import socials from "../data/socials";
 
 const Footer = () => {
   return (
@@ -11,59 +9,8 @@ const Footer = () => {
         <Row>
           <Col lg={6}>
             <h2 className="heading heading-h2 text-white line-height-1-39">
-              Start working on a <br /> new project?
+              Need to talk <br /> to us?
             </h2>
-          </Col>
-
-          <Col lg={6} xl={{ span: 5, offset: 1 }}>
-            <div className="bk-footer-widget menu--contact mt_md--30 mt_sm--30">
-              <Widget wrapClasses="menu--contact" title="Contact us">
-                <div className="footer-address">
-                  <Row>
-                    <Col sm={6} lg={7}>
-                      <p className="bk_pra text-white line-height-1-63">
-                        2005 Stokes Isle Apt. 896, <br /> Venaville 10010, USA
-                      </p>
-
-                      <div className="social-share social--transparent text-white">
-                        {socials.map((social) => (
-                          <a
-                            key={social.id}
-                            href={`https://${social.media}.com/${social.username}`}
-                          >
-                            <i className={`fa fa-${social.media}`} />
-                          </a>
-                        ))}
-                      </div>
-                    </Col>
-
-                    <Col sm={6} lg={5} className="mt_mobile--30">
-                      <p className="bk_pra text-white line-height-1-63 bk-hover">
-                        <a
-                          className="text-white"
-                          href={`${
-                            process.env.PUBLIC_URL +
-                            "mailto:info@yourdomain.com"
-                          }`}
-                        >
-                          info@yourdomain.com
-                        </a>
-                      </p>
-                      <p className="bk_pra text-white line-height-1-63 bk-hover">
-                        <a
-                          className="text-white"
-                          href={`${
-                            process.env.PUBLIC_URL + "tel:0068120034509"
-                          }`}
-                        >
-                          (+68)120034509
-                        </a>
-                      </p>
-                    </Col>
-                  </Row>
-                </div>
-              </Widget>
-            </div>
           </Col>
         </Row>
       </div>
@@ -74,25 +21,25 @@ const Footer = () => {
             <div className="copyright-left text-md-left text-center">
               <ul className="bk-copyright-menu d-flex bk-hover justify-content-center justify-content-md-start flex-wrap flex-sm-nowrap">
                 <li>
-                  <Link href={process.env.PUBLIC_URL + "/blog"}>Our blog</Link>
+                  <Link href={"/tos"}>Terms of Services</Link>
                 </li>
                 <li>
-                  <Link href={process.env.PUBLIC_URL + "/portfolio"}>
-                    Latest projects
-                  </Link>
-                </li>
-                <li>
-                  <Link href={process.env.PUBLIC_URL + "/contact"}>
-                    Contact us
-                  </Link>
+                  <Link href={"/privacy"}>Privacy Policy</Link>
                 </li>
               </ul>
             </div>
           </Col>
-
+          <div className="bk-footer-widget menu--contact mt_md--30 mt_sm--30"></div>
           <Col xs={12} md={6}>
             <div className="copyright-right text-md-right text-center">
-              <p>© {new Date().getFullYear()} Brook. All Rights Reserved.</p>
+              <div className="footer-address">
+                <p className="bk_pra text-white line-height-1-63 bk-hover">
+                  <a className="text-white" href={"nifter.app@gmail.com"}>
+                    nifter.app@gmail.com
+                  </a>
+                </p>
+              </div>
+              <p>© {new Date().getFullYear()} Nifter. All Rights Reserved.</p>
             </div>
           </Col>
         </Row>
