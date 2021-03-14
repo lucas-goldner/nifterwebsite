@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../components/logo";
+import Logo from "../components/Logo";
 import HeaderConfig from "../config/HeaderConfig";
 import HeaderContainer from "../container/HeaderContainer";
 
