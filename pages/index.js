@@ -4,7 +4,6 @@ import portfolios from "../data/pages.json";
 import ReactPageScroller from "react-page-scroller";
 import LayoutDefault from "../container/LayoutDefault";
 import Header from "../components/Header";
-import PopupMenu from "../components/PopupMenu";
 import PortfolioItem from "../components/babyComponents/PortfolioItem";
 
 const HomeVerticalSlidePortfolio = () => {
@@ -46,7 +45,7 @@ const HomeVerticalSlidePortfolio = () => {
         revealFooter={false}
       >
         <Header />
-        <PopupMenu />
+
         <ReactPageScroller
           pageOnChange={handlePageChange}
           customPageNumber={currentPage}
