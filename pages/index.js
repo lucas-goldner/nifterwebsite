@@ -5,6 +5,8 @@ import ReactPageScroller from "react-page-scroller";
 import LayoutDefault from "../container/LayoutDefault";
 import Header from "../components/Header";
 import PortfolioItem from "../components/babyComponents/PortfolioItem";
+import Footer from "../components/Footer";
+import FooterContainer from "../container/FooterContainer";
 
 const HomeVerticalSlidePortfolio = () => {
   const [currentPage, setCurrentPage] = useState(null);
@@ -15,7 +17,7 @@ const HomeVerticalSlidePortfolio = () => {
 
   const getPagesNumbers = () => {
     const numbersPage = [];
-    for (let i = 0; i <= 2; i++) {
+    for (let i = 0; i <= 3; i++) {
       numbersPage.push(
         <li key={i}>
           <button
@@ -50,17 +52,25 @@ const HomeVerticalSlidePortfolio = () => {
           pageOnChange={handlePageChange}
           customPageNumber={currentPage}
         >
-          {portfolios.slice(0, 3).map((portfolio) => (
-            <PortfolioItem
-              key={portfolio.id}
-              number={portfolio.id}
-              title={portfolio.title}
-              thumb={"." + portfolio.thumb}
-              category={portfolio.category}
-              character={characters[portfolio.id - 1]}
-              className="section"
-            />
-          ))}
+          {portfolios.slice(0, 4).map((portfolio) =>
+            portfolio.id <= 3 ? (
+              <>
+                <PortfolioItem
+                  key={portfolio.id}
+                  number={portfolio.id}
+                  title={portfolio.title}
+                  thumb={"." + portfolio.thumb}
+                  category={portfolio.category}
+                  character={characters[portfolio.id - 1]}
+                  className="section"
+                />
+              </>
+            ) : (
+              <FooterContainer>
+                <Footer />
+              </FooterContainer>
+            )
+          )}
         </ReactPageScroller>
         <div id="fp-nav" className="right">
           <ul>{pagesNumbers}</ul>
