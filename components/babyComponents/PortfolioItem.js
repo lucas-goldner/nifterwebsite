@@ -7,6 +7,8 @@ const PortfolioItem = ({
   thumb,
   category,
   character,
+  buttonTitle,
+  link,
 }) => {
   return (
     <div className={`h-100 ${className ? className : ""}`}>
@@ -21,8 +23,8 @@ const PortfolioItem = ({
                 <a href={"/"}>{title}</a>
               </h2>
               <div className="fullpage-btn mt--130">
-                <a href={"/"}>
-                  Get App <i className="btn-icon" />
+                <a href={link}>
+                  {buttonTitle} <i className="btn-icon" />
                 </a>
               </div>
             </div>

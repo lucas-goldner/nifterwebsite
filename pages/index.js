@@ -59,6 +59,8 @@ const HomeVerticalSlidePortfolio = () => {
                   key={portfolio.id}
                   number={portfolio.id}
                   title={portfolio.title}
+                  buttonTitle={portfolio.buttonTitle}
+                  link={portfolio.link}
                   thumb={"." + portfolio.thumb}
                   category={portfolio.category}
                   character={characters[portfolio.id - 1]}
