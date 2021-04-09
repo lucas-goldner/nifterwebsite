@@ -26,6 +26,11 @@ const Footer = () => {
                 <li>
                   <Link href={"/privacy"}>Privacy Policy</Link>
                 </li>
+                <li>
+                  <Link href={"https://www.instagram.com/nft_metro/"}>
+                    Instagram
+                  </Link>
+                </li>
               </ul>
             </div>
           </Col>
@@ -34,8 +39,11 @@ const Footer = () => {
             <div className="copyright-right text-md-right text-center">
               <div className="footer-address">
                 <p className="bk_pra text-white line-height-1-63 bk-hover">
-                  <a className="text-white" href={"nifter.app@gmail.com"}>
-                    nifter.app@gmail.com
+                  <a
+                    className="text-white"
+                    href={"mailto:nftmetro.business@gmail.com"}
+                  >
+                    nftmetro.business@gmail.com
                   </a>
                 </p>
               </div>
