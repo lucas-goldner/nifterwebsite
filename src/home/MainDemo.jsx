@@ -19,7 +19,7 @@ class MainDemo extends Component {
     const PostList = BlogContent.slice(0, 3);
     return (
       <Fragment>
-        <Helmet pageTitle="Home || NFT Metro " />
+        <Helmet pageTitle="Home || NFT Metro" />
 
         <Header
           headertransparent="header--transparent"
