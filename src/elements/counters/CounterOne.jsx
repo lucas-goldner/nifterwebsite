@@ -18,7 +18,7 @@ class CounterOne extends Component {
         countTitle: "Total registered users on NFT Metro.",
       },
       {
-        countNum: 16250,
+        countNum: 28062,
         countTitle: "Impressions collected by NFT Metro on the App Store.",
       },
       {
